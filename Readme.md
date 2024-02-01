@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Дмитрий Ужахов](https://up.htmlacademy.ru/adaptive-individual/1/user/2389125).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Комнатная](https://up.htmlacademy.ru/htmlcss-individual/1/user/215761).
 
 ---
 
