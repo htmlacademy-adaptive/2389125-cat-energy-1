@@ -1,0 +1,24 @@
+.promo {
+  color: #ffffff;
+  background-image:  linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    url("../img/background/promo-mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+.promo__title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.promo__slogan {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.promo__link {
+  text-decoration: none;
+}

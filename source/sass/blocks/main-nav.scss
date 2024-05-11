@@ -1,0 +1,11 @@
+.main-nav__list {
+  @include list-reset;
+}
+
+.main-nav__link {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}

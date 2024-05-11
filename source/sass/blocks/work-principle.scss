@@ -1,0 +1,16 @@
+.work-principle__title {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.work-principle__list {
+  @include list-reset;
+}
+
+.work-principle__description {
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}

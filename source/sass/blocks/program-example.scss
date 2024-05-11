@@ -1,0 +1,37 @@
+.program-example {
+  background-color: #eaeaea;
+}
+
+.program-example__title {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.program-example__description {
+  font-family: $main-font;
+  color: #444444;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.program-example__value {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.program-example__key {
+  font-family: $main-font;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+}
+
+.program-example__total-price {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
