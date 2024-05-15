@@ -1,0 +1,30 @@
+.program-type {
+  background-color: #f2f2f2;
+}
+
+.program-type__list {
+  @include list-reset;
+}
+
+.program-type__title {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.program-type__description {
+  font-family: $main-font;
+  color: #444444;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.program-type__link {
+  font-family: $secondary-font;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
