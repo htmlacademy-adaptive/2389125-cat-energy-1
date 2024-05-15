@@ -2,21 +2,21 @@
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/lato/Lato-Regular.woff2") format("woff2"), url("../../fonts/lato/Lato-Regular.woff") format("woff");
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2"), url("../fonts/lato/Lato-Regular.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  src: url("../../fonts/oswald/oswaldmedium.woff2") format("woff2"), url("../../fonts/oswald/oswaldmedium.woff") format("woff");
+  src: url("../fonts/oswald/oswaldmedium.woff2") format("woff2"), url("../fonts/oswald/oswaldmedium.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2"), url("../../fonts/oswald/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2"), url("../fonts/oswald/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 *,
@@ -36,11 +36,14 @@
 }
 
 .button {
+  font-family: "Oswald", "Arial Narrow", sans-serif;
   background-color: #68b738;
   color: #ffffff;
+  font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+  border: none;
 }
 .button--secondary {
   font-family: "Oswald", "Arial Narrow", sans-serif;
@@ -75,6 +78,7 @@
 }
 
 .copyright__link {
+  color: #444444;
   text-decoration: none;
 }
 
@@ -130,7 +134,6 @@
 .form__notice {
   font-size: 14px;
   line-height: 16px;
-  text-transform: uppercase;
 }
 
 .main-footer {
@@ -146,6 +149,7 @@
 
 .main-nav__link {
   font-family: "Oswald", "Arial Narrow", sans-serif;
+  color: #000000;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -251,12 +255,22 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
+  text-transform: uppercase;
 }
 
 .program-type__description {
   font-family: "Lato", "Arial", sans-serif;
+  color: #444444;
   font-size: 14px;
   line-height: 18px;
+}
+
+.program-type__link {
+  font-family: "Oswald", "Arial Narrow", sans-serif;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .programm-form__title {
