@@ -11,10 +11,20 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
+  text-transform: uppercase;
 }
 
 .program-type__description {
   font-family: $main-font;
+  color: #444444;
   font-size: 14px;
   line-height: 18px;
+}
+
+.program-type__link {
+  font-family: $secondary-font;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
 }
