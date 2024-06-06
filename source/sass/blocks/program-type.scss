@@ -1,9 +1,11 @@
-.program-type {
-  background-color: #f2f2f2;
-}
-
 .program-type__list {
   @include list-reset;
+}
+
+.program-type__item {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .program-type__title {
@@ -27,4 +29,12 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+@media (min-width: $desktop-width) {
+  .program-type__list {
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    gap: 80px;
+  }
 }

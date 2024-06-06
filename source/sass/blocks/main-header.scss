@@ -1,0 +1,11 @@
+.main-header__logo {
+  height: 65px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

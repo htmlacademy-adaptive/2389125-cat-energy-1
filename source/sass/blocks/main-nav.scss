@@ -10,3 +10,26 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    max-width: 520px;
+  }
+
+  .main-nav__item {
+    margin-left: 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    // max-width: 600px;
+  }
+}

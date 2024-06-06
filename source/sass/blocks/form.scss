@@ -3,6 +3,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  flex-grow: 1;
 }
 
 .form__label {
@@ -10,6 +11,17 @@
   line-height: 18px;
   color: #444444;
   text-transform: uppercase;
+  padding-right: 13px;
+}
+
+.form__field {
+  display: flex;
+  align-items: center;
+}
+
+.form__item {
+  margin-bottom: 23px;
+  border: none;
 }
 
 .form__legend {
@@ -18,7 +30,56 @@
   line-height: 24px;
 }
 
+.form__control--textarea {
+  width: 100%;
+}
+
 .form__notice {
   font-size: 14px;
   line-height: 16px;
+}
+
+.form__container {
+  border-top: 2px solid $base-color;
+}
+
+@media (min-width: $tablet-width) {
+  .form__item {
+    margin-bottom: 65px;
+  }
+
+  .form__wrapper-checkbox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 60px;
+  }
+
+  .form__footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+
+  .form__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+
+  .form__item {
+    margin-bottom: 70px;
+  }
+
+  .form__wrapper-checkbox {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 80px;
+  }
 }

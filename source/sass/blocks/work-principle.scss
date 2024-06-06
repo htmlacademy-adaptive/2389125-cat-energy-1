@@ -14,3 +14,19 @@
   line-height: 18px;
   color: #444444;
 }
+
+@media (min-width: $tablet-width) {
+  .work-principle__list {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    gap: 37px 135px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .work-principle__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 37px 77px;
+  }
+}

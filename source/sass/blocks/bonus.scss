@@ -8,3 +8,16 @@
   line-height: 26px;
   color: #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .bonus {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .bonus {
+    width: 245px;
+  }
+}
