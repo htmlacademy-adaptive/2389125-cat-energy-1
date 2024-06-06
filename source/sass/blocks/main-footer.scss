@@ -1,3 +1,16 @@
 .main-footer {
   background-color: #f2f2f2;
 }
+
+@media (min-width: $tablet-width) {
+  .main-footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-footer__copyright {
+    display: flex;
+    align-items: center;
+  }
+}

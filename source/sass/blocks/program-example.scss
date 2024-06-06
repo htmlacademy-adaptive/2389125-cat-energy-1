@@ -35,3 +35,9 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
+@media (min-width: $desktop-width) {
+  .program-example__container {
+    display: flex;
+  }
+}

@@ -12,3 +12,46 @@
   line-height: 14px;
   color: #444444;
 }
+
+@media (min-width: $tablet-width) {
+  .extra-card__button {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .extra-card__price {
+    width: 91px;
+    padding-left: 10px;
+    text-align: right;
+  }
+
+  .extra-card__value {
+    width: 160px;
+    padding-left: 10px;
+    margin-left: auto;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-card__button{
+    width: 244px;
+  }
+
+  .extra-card__price {
+    width: 82px;
+    padding-right: 10px;
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .extra-card__value {
+    width: 243px;
+    padding-right: 10px;
+    margin-left: auto;
+    padding-left: 0;
+    text-align: left;
+  }
+}

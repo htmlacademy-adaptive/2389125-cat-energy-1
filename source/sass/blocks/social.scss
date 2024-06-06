@@ -5,3 +5,13 @@
 .social__link {
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    display: flex;
+  }
+
+  .social__item {
+    padding-right: 24px;
+  }
+}
