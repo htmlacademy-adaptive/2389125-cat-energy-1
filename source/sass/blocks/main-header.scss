@@ -1,11 +1,47 @@
+.main-header__container {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-header__logo {
+  height: 65px;
+  margin-left: 20px;
+}
+
+.main-header__logo img {
   height: 65px;
 }
 
+@media (max-width: $mobile-width-only) {
+  .main-header__container {
+    padding: 0;
+  }
+}
+
+
 @media (min-width: $tablet-width) {
   .main-header__container {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 67px;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header--index-green {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 50%;
+      height: 694px;
+      background-color: rgba(104, 183, 56, 0.85);
+      position: absolute;
+      top: 0;
+      left: 50%;
+      background-image:  linear-gradient(rgba(104, 183, 56, 0.85),rgba(104, 183, 56, 0.85)), url("../../img/background/index-background-desktop@1x.jpg");
+    }
+  }
+
 }

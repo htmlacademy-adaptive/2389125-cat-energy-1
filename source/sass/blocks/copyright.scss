@@ -2,3 +2,9 @@
   color: #444444;
   text-decoration: none;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    margin-right: 23px;
+  }
+}

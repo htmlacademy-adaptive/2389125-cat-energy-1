@@ -1,5 +1,20 @@
 .social__list {
   @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.social__item {
+  width: 28px;
+  height: 22px;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 24px;
 }
 
 .social__link {
@@ -8,10 +23,7 @@
 
 @media (min-width: $tablet-width) {
   .social__list {
-    display: flex;
-  }
-
-  .social__item {
-    padding-right: 24px;
+    border-bottom: none;
+    padding: 0;
   }
 }

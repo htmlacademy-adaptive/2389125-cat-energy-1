@@ -3,4 +3,15 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  margin-top: 27px;
+  margin-bottom: 41px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-wrapper__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    margin-bottom: 84px;
+  }
 }
