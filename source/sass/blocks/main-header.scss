@@ -6,6 +6,14 @@
 .main-header__logo {
   height: 65px;
   margin-left: 20px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-header__logo img {
@@ -18,13 +26,12 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .main-header__container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 67px;
+    margin-bottom: 65px;
   }
 }
 
@@ -40,8 +47,15 @@
       position: absolute;
       top: 0;
       left: 50%;
-      background-image:  linear-gradient(rgba(104, 183, 56, 0.85),rgba(104, 183, 56, 0.85)), url("../../img/background/index-background-desktop@1x.jpg");
+      background-image: linear-gradient(
+          rgba(104, 183, 56, 0.85),
+          rgba(104, 183, 56, 0.85)
+        ),
+        url("../../img/background/index-background-desktop@1x.jpg");
     }
   }
 
+  .main-header__container {
+    margin-bottom: 74px;
+  }
 }

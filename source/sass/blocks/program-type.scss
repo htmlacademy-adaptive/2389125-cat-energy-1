@@ -59,11 +59,12 @@
       background-position: right 0 center;
       transition: background-position 0.3s;
     }
-  }
-}
 
-.program-type__link:active {
-  opacity: 0.3;
+    &:active {
+      color: #000000;
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -76,7 +77,7 @@
 
   .program-type__description {
     border-bottom: none;
-    margin-bottom: 48px;
+    margin-bottom: 52px;
     padding-bottom: 0;
     font-size: 16px;
     line-height: 24px;
@@ -90,6 +91,7 @@
   .program-type__link {
     font-size: 20px;
     line-height: 30px;
+    margin-top: 0;
 
     &::after {
       top: 10px;
@@ -116,6 +118,10 @@
   }
 
   .program-type__description {
-    margin-bottom: 23px;
+    margin-bottom: 27px;
+  }
+
+  .program-type__link {
+    margin-top: 0;
   }
 }

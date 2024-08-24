@@ -18,7 +18,17 @@
 }
 
 .social__link {
+  color: #666666;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $base-color;
+  }
+
+  &:active {
+    color: rgba(104, 183, 56, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

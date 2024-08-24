@@ -3,5 +3,25 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  margin: 0;
   margin-bottom: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-form__title {
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 405px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-form__title {
+    width: 460px;
+    padding-right: 70px;
+    padding-left: 70px;
+  }
 }

@@ -40,15 +40,6 @@
   text-align: center;
 }
 
-.promo__link:hover {
-  background-color: #5eaa2f;
-}
-
-.promo__link:active {
-  background-color: #5eaa2f;
-  color: rgba(255, 255, 255, 0.3);
-}
-
 @media (min-width: $tablet-width) {
   .promo {
     background-image: none;
@@ -73,7 +64,7 @@
   .promo__image {
     position: absolute;
   }
-  
+
   .promo__link {
     font-size: 20px;
     line-height: 26px;
