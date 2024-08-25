@@ -1,30 +1,126 @@
+.extra-catalog {
+  position: relative;
+}
+
+.extra-catalog::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: $base-color;
+  left: 0;
+  top: 40px;
+}
+
 .extra-catalog__title {
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  padding-top: 25px;
+  padding-bottom: 36px;
+  margin: 0;
+  position: relative;
+
+  span {
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -20px;
+  }
 }
 
 .extra-catalog__list {
   @include list-reset;
 }
 
+.extra-catalog__item {
+  border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 19px;
+}
+
+.extra-catalog__item:first-child {
+  border-top: 1px solid #cdcdcd;
+}
+
 @media (min-width: $tablet-width) {
+  .extra-catalog::before {
+    top: 23px;
+  }
+
   .extra-catalog__item {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 28px;
+  }
+
+  .extra-catalog__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+    margin-bottom: 80px;
+    margin-top: 70px;
+    margin-left: 40px;
+    border: none;
+
+    span {
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-left: -40px;
+    }
+  }
+
+  .extra-catalog__list {
+    padding: 0;
+    border: 1px solid #cdcdcd;
+  }
+
+  .extra-catalog__item:last-child {
+    border-bottom: none;
+  }
+
+  .extra-catalog__item:first-child {
+    border-top: none;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .extra-catalog {
+    padding-bottom: 87px;
+  }
+
   .extra-catalog__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .extra-catalog__title {
+    span {
+      margin-left: -80px;
+    }
   }
 
   .extra-catalog__list {
     width: 895px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .extra-catalog__item:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .extra-catalog__item {
+    padding-top: 15px;
+    padding-bottom: 17px;
+    padding-right: 0;
+    padding-left: 0;
   }
 }

@@ -3,4 +3,22 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  margin-top: 27px;
+  margin-bottom: 37px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-wrapper__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-wrapper--form {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }

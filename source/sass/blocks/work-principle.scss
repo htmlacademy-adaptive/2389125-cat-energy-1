@@ -1,18 +1,67 @@
+.work-principle {
+  padding-bottom: 23px;
+}
+
 .work-principle__title {
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .work-principle__list {
   @include list-reset;
 }
 
+.work-principle__item {
+  padding-left: 80px;
+  position: relative;
+
+  &::before {
+    @include pseudo;
+
+    width: 60px;
+    height: 60px;
+    left: 0;
+    top: 0;
+    background-color: $base-color;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--leaf {
+    &::before {
+      background-image: url("../img/svg/icon-leaf.svg");
+    }
+  }
+
+  &--tub {
+    &::before {
+      background-image: url("../img/svg/icon-tub.svg");
+    }
+  }
+
+  &--eat {
+    &::before {
+      background-image: url("../../img/svg/icon-eat.svg");
+    }
+  }
+
+  &--clock {
+    &::before {
+      background-image: url("../../img/svg/icon-clock.svg");
+    }
+  }
+}
+
 .work-principle__description {
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  margin: 0;
+  margin-bottom: 26px;
 }
 
 @media (min-width: $tablet-width) {
@@ -20,6 +69,47 @@
     display: grid;
     grid-template-columns: repeat(2, 250px);
     gap: 37px 135px;
+    counter-reset: myCounter;
+  }
+
+  .work-principle__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
+
+  .work-principle__item {
+    padding-top: 151px;
+    padding-left: 0;
+    padding-right: 20px;
+    padding-bottom: 57px;
+
+    &::after {
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      font-family: $secondary-font;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 136px;
+      z-index: 1;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
+  }
+
+  .work-principle__description {
+    position: relative;
+    z-index: 2;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -27,6 +117,6 @@
   .work-principle__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 37px 77px;
+    gap: 37px 55px;
   }
 }

@@ -1,23 +1,72 @@
 .bonus {
-  background-image:  linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+  background-image: linear-gradient(
+      rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)
+    ),
     url("../img/background/bonus-mobile.jpg");
   background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 35px;
+  margin-top: 35px;
+  background-size: cover;
+}
+
+.bonus::before {
+  content: "";
+  position: absolute;
+  width: 78px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/svg/icon-gift.svg");
+  top: 58px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .bonus__description {
-  line-height: 26px;
+  line-height: 20px;
   color: #ffffff;
+  padding-left: 58px;
+  padding-right: 58px;
+  padding-bottom: 43px;
+  text-align: center;
+  padding-top: 186px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
   .bonus {
     width: 100%;
-    height: 200px;
+    margin-bottom: 75px;
+    margin-top: 70px;
+  }
+
+  .bonus::before {
+    top: 58px;
+    left: 77px;
+    transform: none;
+  }
+
+  .bonus__description {
+    text-align: left;
+    padding: 71px 125px 69px 421px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .bonus {
     width: 245px;
+    margin: 0;
+  }
+
+  .bonus__description {
+    padding: 185px 42px 42px 42px;
+    text-align: center;
+  }
+
+  .bonus::before {
+    top: 56px;
+    left: 83px;
   }
 }

@@ -1,0 +1,13 @@
+.logo {
+  text-decoration: none;
+}
+
+.logo__image {
+  margin-right: 56px;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__image {
+    margin-right: 13px;
+  }
+}

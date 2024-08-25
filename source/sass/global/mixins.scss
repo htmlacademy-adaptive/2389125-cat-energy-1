@@ -4,3 +4,9 @@
   margin-bottom: 0;
   list-style: none;
 }
+
+@mixin pseudo {
+  content: "";
+  display: block;
+  position: absolute;
+}

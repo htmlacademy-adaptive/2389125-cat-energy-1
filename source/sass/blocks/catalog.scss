@@ -1,5 +1,14 @@
 .catalog__list {
   @include list-reset;
+
+  border-top: 1px solid #ebebeb;
+}
+
+@media (max-width: $mobile-width-only) {
+  .catalog__container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -7,6 +16,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 60px;
+    border: none;
   }
 }
 

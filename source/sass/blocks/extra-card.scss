@@ -4,6 +4,18 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #222222;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+
+.extra-card__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.extra-card__button {
+  width: 100%;
 }
 
 .extra-card__value,
@@ -13,12 +25,22 @@
   color: #444444;
 }
 
+.extra-card__value {
+  margin-right: auto;
+}
+
 @media (min-width: $tablet-width) {
   .extra-card__button {
     width: 100%;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+
+  .extra-card__product {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: auto;
   }
 
   .extra-card__price {
@@ -30,14 +52,22 @@
   .extra-card__value {
     width: 160px;
     padding-left: 10px;
-    margin-left: auto;
     text-align: right;
+  }
+
+  .extra-card__wrapper {
+    margin: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .extra-card__button{
+  .extra-card__button {
     width: 244px;
+  }
+
+  .extra-card__product {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .extra-card__price {
@@ -45,12 +75,13 @@
     padding-right: 10px;
     padding-left: 0;
     text-align: left;
+    margin-left: 0;
   }
 
   .extra-card__value {
     width: 243px;
     padding-right: 10px;
-    margin-left: auto;
+    margin-left: 0;
     padding-left: 0;
     text-align: left;
   }

@@ -14,6 +14,10 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  padding-left: 70px;
+  margin: 0;
+  padding-top: 10px;
+  margin-bottom: 29px;
 }
 
 .program-type__description {
@@ -21,6 +25,9 @@
   color: #444444;
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .program-type__link {
@@ -29,6 +36,67 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+  padding-right: 57px;
+  position: relative;
+
+  &::after {
+    @include pseudo;
+
+    width: 32px;
+    height: 10px;
+    background-image: url("../img/svg/arrow-long.svg");
+    right: 0;
+    top: 4px;
+    background-position: right 8px center;
+    background-repeat: no-repeat;
+    transition: background-position 0.3s;
+  }
+
+  &:hover {
+    &::after {
+      background-position: right 0 center;
+      transition: background-position 0.3s;
+    }
+
+    &:active {
+      color: #000000;
+      opacity: 0.3;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-type__title {
+    padding: 0;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .program-type__description {
+    border-bottom: none;
+    margin-bottom: 52px;
+    padding-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+
+  .program-type__item {
+    padding: 77px 316px 53px 52px;
+  }
+
+  .program-type__link {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 0;
+
+    &::after {
+      top: 10px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -36,5 +104,24 @@
     display: grid;
     grid-template-columns: repeat(2, 570px);
     gap: 80px;
+  }
+
+  .program-type__item {
+    padding: 77px 61px 55px 52px;
+    margin-bottom: 71px;
+  }
+
+  .program-type__title {
+    padding-left: 162px;
+    margin: 0;
+    margin-bottom: 73px;
+  }
+
+  .program-type__description {
+    margin-bottom: 27px;
+  }
+
+  .program-type__link {
+    margin-top: 0;
   }
 }
