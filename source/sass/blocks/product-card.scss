@@ -25,6 +25,7 @@
   color: #222222;
   text-transform: uppercase;
   max-width: 76px;
+margin-top: 0;
 }
 
 .product-card__parameters {
@@ -46,6 +47,7 @@
   text-align: center;
   margin: 0;
   margin-bottom: 21px;
+  margin-top: 8px;
 }
 
 .product-card--more {
@@ -95,6 +97,11 @@
       #f2f2f2 82px,
       #f2f2f2 100%
     );
+  }
+
+  .product-card__image {
+    width: 200px;
+    height: 210px;
   }
 
   .product-card__description {
@@ -165,5 +172,12 @@
 
   .product-card__parameters-row:last-child {
     margin-bottom: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-card__image {
+    width: 169px;
+    height: 210px;
   }
 }
