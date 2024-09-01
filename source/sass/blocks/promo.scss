@@ -21,6 +21,7 @@
   font-weight: 400;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .promo__slogan {
@@ -29,6 +30,7 @@
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 29px;
 }
 
 .promo__link {
@@ -44,6 +46,11 @@
   .promo {
     background-image: none;
     min-height: 875px;
+    padding: 0;
+  }
+
+  .promo__wrapper {
+    position: relative;
   }
 
   .promo__title {
@@ -52,6 +59,8 @@
     line-height: 60px;
     text-align: left;
     max-width: 450px;
+    margin-bottom: 40px;
+    margin-left: 90px;
   }
 
   .promo__slogan {
@@ -59,10 +68,9 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
-  }
-
-  .promo__image {
-    position: absolute;
+    margin: 0;
+    margin-bottom: 21px;
+    margin-left: 90px;
   }
 
   .promo__link {
@@ -70,5 +78,26 @@
     line-height: 26px;
     width: auto;
     padding: 14px 26px;
+    position: absolute;
+    left: 90px;
+    top: 225px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    min-height: 517px;
+    margin-bottom: 82px;
+  }
+
+  .promo__image {
+    position: absolute;
+    top: -73px;
+    left: 447px;
+  }
+
+  .promo__slogan {
+    margin-bottom: 52px;
   }
 }

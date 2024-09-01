@@ -6,6 +6,53 @@
   background-color: #f2f2f2;
   padding: 20px;
   margin-bottom: 20px;
+  position: relative;
+
+  &--slim {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: $base-color;
+      top: 27px;
+      left: 21px;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 36px;
+      height: 50px;
+      background-image: url("../img/svg/cat-slim.svg");
+      top: 22px;
+      left: 27px;
+    }
+  }
+
+  &--fat {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: $base-color;
+      top: 25px;
+      left: 20px;
+      border-radius: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 67px;
+      height: 28px;
+      background-image: url("../img/svg/cat-pro.svg");
+      top: 35px;
+      left: 13px;
+    }
+  }
 }
 
 .program-type__title {
@@ -86,6 +133,40 @@
 
   .program-type__item {
     padding: 77px 316px 53px 52px;
+
+    &--slim {
+      &::before {
+        width: 200px;
+        height: 200px;
+        top: 92px;
+        left: 445px;
+      }
+
+      &::after {
+        width: 140px;
+        height: 194px;
+        background-size: 140px 194px;
+        top: 81px;
+        left: 475px;
+      }
+    }
+
+    &--fat {
+      &::before {
+        width: 200px;
+        height: 200px;
+        top: 92px;
+        left: 445px;
+      }
+
+      &::after {
+        width: 268px;
+        height: 112px;
+        background-size: 268px 112px;
+        top: 135px;
+        left: 411px;
+      }
+    }
   }
 
   .program-type__link {
@@ -109,6 +190,38 @@
   .program-type__item {
     padding: 77px 61px 55px 52px;
     margin-bottom: 71px;
+
+    &--slim {
+      &::before {
+        width: 100px;
+        height: 100px;
+        top: 47px;
+        left: 52px;
+      }
+
+      &::after {
+        background-size: 70px 97px;
+        background-repeat: no-repeat;
+        top: 41px;
+        left: 67px;
+      }
+    }
+
+    &--fat {
+      &::before {
+        width: 100px;
+        height: 100px;
+        top: 47px;
+        left: 52px;
+      }
+
+      &::after {
+        top: 67px;
+        left: 33px;
+        background-size: 134px 56px;
+        background-repeat: no-repeat;
+      }
+    }
   }
 
   .program-type__title {

@@ -44,10 +44,19 @@
 
     <section class="promo">
       <div class="container">
+        <div class="promo__wrapper">
         <h1 class="promo__title">Функциональное питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="#!" alt="Корм со вкусом курицы.">
-        <a class="promo__link button" href="form.html">Подобрать программу</a>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/promo/desktop-promo.png 1x, img/promo/desktop-promo@2x.png 2x"
+            width="552" height="499">
+          <source media="(min-width: 768px)" srcset="img/promo/tablet-promo.png 1x, img/promo/tablet-promo@2x.png 2x"
+            width="709" height="609">
+          <img class="promo__image" src="img/promo/mobile-promo.png" width="280" height="270"
+            srcset="img/promo/mobile-promo@2x.png 2x" alt="Корм со вкусом курицы.">
+          </picture>
+          <a class="promo__link button" href="form.html">Подобрать программу</a>
+          </div>
       </div>
     </section>
 
@@ -59,7 +68,6 @@
             <p class="program-type__description">Ваш кот весит больше собаки и почти утратил способность лазить по
               деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="program-type__link" href="catalog.html">Каталог slim
-
             </a>
           </li>
           <li class="program-type__item program-type__item--fat">
