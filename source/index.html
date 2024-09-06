@@ -16,9 +16,13 @@
   <header class="main-header main-header--index-green">
     <div class="main-header__container container">
       <a class="main-header__logo logo" href="index.html">
-        <img class="logo__image" src="img/logo/logo-mobile.svg" width="33" height="38"
-          alt="Логотип интернет-магазина." />
-        <img class="logo__text" src="img/logo/logo-text.svg" width="101" height="18" alt="Название компании." />
+        <picture>
+          <source media="(min-width: 1440px)" width="202" height="59" srcset="img/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" width="174" height="50" srcset="img/logo/logo-tablet.svg">
+          <img class="logo__image" src="img/logo/logo-mobile.svg" width="33" height="38" alt="Логотип интернет-магазина." />
+        </picture>
+        <img class="logo__text logo__text--header" src="img/logo/logo-text.svg" width="101" height="18"
+          alt="Название компании." />
       </a>
       <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button">
@@ -45,18 +49,18 @@
     <section class="promo">
       <div class="container">
         <div class="promo__wrapper">
-        <h1 class="promo__title">Функциональное питание для котов</h1>
-        <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/promo/desktop-promo.png 1x, img/promo/desktop-promo@2x.png 2x"
-            width="552" height="499">
-          <source media="(min-width: 768px)" srcset="img/promo/tablet-promo.png 1x, img/promo/tablet-promo@2x.png 2x"
-            width="709" height="609">
-          <img class="promo__image" src="img/promo/mobile-promo.png" width="280" height="270"
-            srcset="img/promo/mobile-promo@2x.png 2x" alt="Корм со вкусом курицы.">
+          <h1 class="promo__title">Функциональное питание для котов</h1>
+          <p class="promo__slogan">Занялся собой? Займись котом!</p>
+          <picture>
+            <source media="(min-width: 1440px)"
+              srcset="img/promo/desktop-promo.png 1x, img/promo/desktop-promo@2x.png 2x" width="552" height="499">
+            <source media="(min-width: 768px)" srcset="img/promo/tablet-promo.png 1x, img/promo/tablet-promo@2x.png 2x"
+              width="709" height="609">
+            <img class="promo__image" src="img/promo/mobile-promo.png" width="280" height="270"
+              srcset="img/promo/mobile-promo@2x.png 2x" alt="Корм со вкусом курицы.">
           </picture>
           <a class="promo__link button" href="form.html">Подобрать программу</a>
-          </div>
+        </div>
       </div>
     </section>
 
@@ -129,8 +133,26 @@
           </div>
         </div>
         <div class="program-example__progress">
-          <img class="program-example__img program-example__img--before" src="#!" alt="До-программы похудения.">
-          <img class="program-example__img program-example__img--after" src="#!" alt="После-программы похудения.">
+          <div class="program-example__progress-before">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/cat-tablet-fat@.png 1x, img/cat-tablet-fat@2x.png 2x"
+                width="560" height=" 512">
+              <source media="(min-width: 768px)" srcset="img/cat-tablet-fat@.png 1x, img/cat-tablet-fat@2x.png 2x"
+                width="560" height=" 512">
+              <img class="program-example__img program-example__img--before" src="img/cat-mobile-fat.png"
+                srcset="img/cat-mobile-fat@2x.png 2x" width="280" height="256" alt="До-программы похудения.">
+            </picture>
+          </div>
+          <div class="program-example__progress-after">
+            <picture>
+              <source media="(min-width: 1440px" )
+                srcset="img/cat-tablet-skinny.png 1x, img/cat-tablet-skinny@2x.png 2x" width="560" height=" 512">
+              <source media="(min-width: 768px" ) srcset="img/cat-tablet-skinny.png 1x, img/cat-tablet-skinny@2x.png 2x"
+                width="560" height=" 512">
+              <img class="program-example__img program-example__img--after" src="img/cat-mobile-skinny.png"
+                srcset="img/cat-mobile-skinny@2x.png 2x" width="280" height="256" alt="После-программы похудения.">
+            </picture>
+          </div>
           <button class="program-example__slider" type="button"></button>
         </div>
       </div>

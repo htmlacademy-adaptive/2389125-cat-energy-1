@@ -12,9 +12,13 @@
   <header class="main-header">
     <div class="main-header__container container">
       <a class="main-header__logo logo" href="index.html">
-        <img class="logo__image" src="img/logo/logo-mobile.svg" width="33" height="38"
-          alt="Логотип интернет-магазина." />
-        <img class="logo__text" src="img/logo/logo-text.svg" width="101" height="18" alt="Название компании." />
+        <picture>
+          <source media="(min-width: 1440px)" width="202" height="59" srcset="img/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" width="174" height="50" srcset="img/logo/logo-tablet.svg">
+          <img class="logo__image" src="img/logo/logo-mobile.svg" width="33" height="38" alt="Логотип интернет-магазина." />
+        </picture>
+        <img class="logo__text logo__text--header" src="img/logo/logo-text.svg" width="101" height="18"
+          alt="Название компании." />
       </a>
       <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle" type="button">

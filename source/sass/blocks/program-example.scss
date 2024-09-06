@@ -1,5 +1,71 @@
 .program-example {
   background-color: #eaeaea;
+  padding-bottom: 40px;
+}
+
+.program-example__progress {
+  position: relative;
+}
+
+.program-example__progress-before {
+  position: absolute;
+  width: 50%;
+  background-color: #eaeaea;
+  overflow: hidden;
+}
+
+.program-example__slider {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  padding: 0;
+  border-radius: 2px;
+  background-color: #666666;
+  top: 0;
+  left: 50%;
+  border: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #666666;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mask-image: url("../img/svg/slider-arrows.svg");
+    background-color: #666666;
+    z-index: 1;
+  }
+
+  &:hover {
+    background-color: $base-color;
+
+    &::after {
+      border-color: $base-color;
+    }
+
+    &::before {
+      background-color: $base-color;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .program-example__results {
@@ -80,10 +146,27 @@
       transparent 100%
     );
     background-color: #ffffff;
+    padding-bottom: 101px;
   }
 
   .program-example__results-wrapper {
     width: 367px;
+  }
+
+  .program-example__progress-before {
+    background-image: linear-gradient(
+      to top,
+      #eaeaea 0%,
+      #eaeaea 361px,
+      #ffffff 361px,
+      #ffffff 100%
+    );
+  }
+
+  .program-example__progress {
+    width: 560px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .program-example__results {
@@ -151,6 +234,21 @@
       #f2f2f2 100%
     );
     padding-bottom: 75px;
+  }
+
+  .program-example__progress-before {
+    background: linear-gradient(
+      to bottom,
+      #ffffff 0%,
+      #ffffff 136px,
+      #f2f2f2 136px,
+      #f2f2f2 100%
+    );
+  }
+
+  .program-example__progress {
+    margin: 0;
+    margin-left: auto;
   }
 
   .program-example__container {
