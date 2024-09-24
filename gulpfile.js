@@ -6,6 +6,7 @@ import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import imagemin from 'gulp-imagemin';
 import webp from 'gulp-webp';
+import svgstore from 'gulp-svgstore';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
@@ -41,6 +42,16 @@ export const createWebp = () => {
 }
 
 //Sprite
+
+//Sprite
+
+export const sprite = () => {
+  return gulp.src('source/img/social/*.svg')
+  .pipe(svgstore())
+  .pipe(rename('sprite.svg'))
+  .pipe(gulp.dest('build/img'));
+}
+
 
 // Server
 

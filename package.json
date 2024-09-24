@@ -12,6 +12,7 @@
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
     "gulp-rename": "^2.0.0",
+    "gulp-svgstore": "^9.0.0",
     "gulp-webp": "^5.0.0",
     "postcss": "8.3.11",
     "postcss-csso": "^6.0.1",
@@ -25,7 +26,8 @@
     "build": "gulp styles",
     "start": "gulp",
     "images": "gulp images",
-    "webp": "gulp createWebp"
+    "webp": "gulp createWebp",
+    "sprite": "gulp sprite"
   },
   "browserslist": [
     "last 2 versions",
