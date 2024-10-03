@@ -41,7 +41,7 @@
   width: 100%;
   height: 362px;
   text-align: center;
-  background-image: url("../img/mobile-map@2x.jpg");
+  background-image: url("../img/map/mobile-map.jpg");
   background-size: contain;
 }
 
@@ -52,6 +52,7 @@
 
   .contacts__map {
     height: 400px;
+    background-image: url("../img/map/tablet-map.jpg");
   }
 
   .contacts__map iframe {
@@ -89,5 +90,10 @@
     background-color: #ffffff;
     padding: 61px 80px 60px 78px;
     width: 565px;
+  }
+
+  .contacts__map {
+    background-image: url("../img/map/desktop-map.jpg");
+    background-size: cover;
   }
 }
