@@ -148,14 +148,11 @@
   flex-grow: 1;
   width: 170px;
   height: 45px;
-  border: 1px solid #e7e7e7;
+  outline: 1px solid #e7e7e7;
   padding-left: 15px;
   padding-right: 15px;
   color: #444444;
-
-  &:invalid {
-    border-color: 2px solid #ff8282;
-  }
+  border: none;
 
   &::placeholder {
     color: #444444;
@@ -171,16 +168,15 @@
   }
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    outline: 1px solid #cdcdcd;
   }
 
   &:focus {
-    outline: none;
-    border: 2px solid #444444;
+    outline: 2px solid #444444;
   }
 
   &:focus:invalid {
-    border: 2px solid #ff8282;
+    outline: 2px solid #ff8282;
   }
 
   &::-webkit-outer-spin-button,
@@ -188,6 +184,7 @@
     appearance: none;
   }
 }
+
 
 .form__legend {
   position: relative;

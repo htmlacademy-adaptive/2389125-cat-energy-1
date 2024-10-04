@@ -1,11 +1,16 @@
+.main-header {
+  min-height: 65px;
+}
+
 .main-header__container {
   display: flex;
   flex-direction: column;
 }
 
 .main-header__logo {
-  height: 65px;
+  height: 62px;
   margin-left: 20px;
+  width: 200px;
 
   &:hover {
     opacity: 0.8;
@@ -32,6 +37,11 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 65px;
+    padding-top: 25px;
+  }
+
+  .main-header__logo {
+    margin: 0;
   }
 }
 
@@ -51,11 +61,25 @@
           rgba(104, 183, 56, 0.85),
           rgba(104, 183, 56, 0.85)
         ),
-        url("../../img/background/index-background-desktop@1x.jpg");
+        url("../img/background/promo-desktop-bg.jpg"),
+        linear-gradient(#4e4d52, #4e4d52);
+      background-position: right;
+      background-repeat: no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+            rgba(104, 183, 56, 0.85),
+            rgba(104, 183, 56, 0.85)
+          ),
+          url("../img/background/promo-desktop-bg@2x.jpg"),
+          linear-gradient(#4e4d52, #4e4d52);
+        background-size: 720px auto;
+      }
     }
   }
 
   .main-header__container {
-    margin-bottom: 74px;
+    margin-bottom: 110px;
+    padding-top: 55px;
   }
 }

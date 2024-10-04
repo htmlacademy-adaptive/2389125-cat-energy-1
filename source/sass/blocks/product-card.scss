@@ -25,6 +25,7 @@
   color: #222222;
   text-transform: uppercase;
   max-width: 76px;
+margin-top: 0;
 }
 
 .product-card__parameters {
@@ -46,6 +47,7 @@
   text-align: center;
   margin: 0;
   margin-bottom: 21px;
+  margin-top: 8px;
 }
 
 .product-card--more {
@@ -97,6 +99,11 @@
     );
   }
 
+  .product-card__image {
+    width: 200px;
+    height: 210px;
+  }
+
   .product-card__description {
     margin-bottom: 82px;
     font-size: 16px;
@@ -112,12 +119,12 @@
     background-image: none;
     border: 2px solid #f2f2f2;
     margin-top: 82px;
+    padding-top: 155px;
 
     &::before {
       width: 60px;
       height: 60px;
-      background-size: 60px 60px;
-      // background-image: ; добавить картинку
+      background-image: url("../img/svg/plus-tablet.svg");
     }
 
     .product-card__title {
@@ -126,7 +133,6 @@
       margin-right: auto;
       margin-left: auto;
       margin-bottom: 23px;
-      padding-top: 60px;
     }
   }
 
@@ -165,5 +171,12 @@
 
   .product-card__parameters-row:last-child {
     margin-bottom: 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-card__image {
+    width: 169px;
+    height: 210px;
   }
 }
