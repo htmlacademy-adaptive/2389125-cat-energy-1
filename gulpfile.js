@@ -95,7 +95,7 @@ export const clean = () => {
 //Reload
 
 export const reload = done => {
-  browserSync.reload();
+  browser.reload();
   done();
 }
 

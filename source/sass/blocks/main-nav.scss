@@ -6,8 +6,8 @@
   position: absolute;
   width: 24px;
   height: 24px;
-  top: -44px;
-  right: 20px;
+  top: -46px;
+  right: 17px;
   border: none;
   cursor: pointer;
   background-color: #ffffff;
@@ -20,9 +20,14 @@
   width: 24px;
   height: 2px;
   background-color: #000000;
-  top: 5px;
+  top: 3px;
   left: 0;
-  box-shadow: 0 6px 0 0 #000000, 0 12px 0 0 #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.main-nav--closed .main-nav__toggle {
+  top: -46px;
+  right: 21px;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -64,7 +69,7 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 22px;
-  padding-bottom: 24px;
+  padding-bottom: 23px;
   text-align: center;
   border-bottom: 1px solid #e6e6e6;
 }
@@ -125,26 +130,33 @@
     max-width: 600px;
     background-color: transparent;
     border-top: none;
+    padding-right: 4px;
   }
 
   .main-nav__item:not(:last-child) {
-    margin-right: 33px;
+    margin-right: 34px;
   }
 
   .main-nav__link {
     border-bottom: none;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 11px;
+    padding-top: 13px;
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav__list {
     max-width: 600px;
+    padding: 0;
   }
 
   .main-nav__link {
     color: #000000;
+    font-size: 20px;
   }
 
   .main-nav__item--active {
@@ -166,7 +178,7 @@
       background: #ffffff;
     }
   }
-// Поменять цвет!!
+
   .main-nav__item a[href] {
     &:hover {
       color: #000000;

@@ -8,7 +8,7 @@
 }
 
 .main-header__logo {
-  height: 62px;
+  height: 65px;
   margin-left: 20px;
   width: 200px;
 
@@ -36,8 +36,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 65px;
-    padding-top: 25px;
+    padding-top: 16px;
   }
 
   .main-header__logo {
@@ -79,7 +78,6 @@
   }
 
   .main-header__container {
-    margin-bottom: 110px;
-    padding-top: 55px;
+    padding-top: 53px;
   }
 }
