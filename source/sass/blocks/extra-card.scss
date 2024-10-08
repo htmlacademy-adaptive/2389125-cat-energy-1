@@ -1,6 +1,7 @@
 .extra-card__product {
   font-family: $secondary-font;
   font-weight: 400;
+  font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color: #222222;
@@ -41,22 +42,30 @@
     margin-top: 25px;
     margin-bottom: 25px;
     margin-right: auto;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .extra-card__price {
     width: 91px;
     padding-left: 10px;
     text-align: right;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .extra-card__value {
     width: 160px;
     padding-left: 10px;
     text-align: right;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .extra-card__wrapper {
     margin: 0;
+    padding-top: 9px;
+    padding-right: 3px;
   }
 }
 
@@ -84,5 +93,9 @@
     margin-left: 0;
     padding-left: 0;
     text-align: left;
+  }
+
+  .extra-card__wrapper {
+    padding: 0;
   }
 }

@@ -15,7 +15,7 @@
   .catalog__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    gap: 69px 60px;
     border: none;
   }
 }
@@ -24,6 +24,6 @@
   .catalog__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 63px 80px;
+    gap: 74px 80px;
   }
 }

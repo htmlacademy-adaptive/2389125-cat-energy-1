@@ -1,5 +1,6 @@
 .main-header {
   min-height: 65px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .main-header__container {
@@ -41,6 +42,10 @@
 
   .main-header__logo {
     margin: 0;
+  }
+
+  .main-header {
+    border: none;
   }
 }
 
