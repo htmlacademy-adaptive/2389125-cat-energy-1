@@ -10,7 +10,7 @@
 
 @media (min-width: $tablet-width) {
   .program-form__title {
-    margin-bottom: 66px;
+    margin-bottom: 45px;
     font-size: 20px;
     line-height: 30px;
     width: 405px;
@@ -21,8 +21,9 @@
 
 @media (min-width: $desktop-width) {
   .program-form__title {
-    width: 460px;
-    padding-right: 70px;
-    padding-left: 70px;
+    width: 355px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 67px;
   }
 }

@@ -1,5 +1,5 @@
 .contacts {
-  background-color: f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .contacts__wrapper {
@@ -95,6 +95,7 @@
 @media (min-width: $desktop-width) {
   .contacts__container {
     position: relative;
+    z-index: 1;
   }
 
   .contacts__wrapper {
@@ -104,6 +105,14 @@
     background-color: #ffffff;
     padding: 61px 80px 60px 78px;
     width: 565px;
+  }
+
+  .contacts__description {
+    text-align: left;
+
+    span {
+      margin-top: 20px;
+    }
   }
 
   .contacts__map {

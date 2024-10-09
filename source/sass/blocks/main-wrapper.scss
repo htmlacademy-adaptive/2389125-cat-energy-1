@@ -18,15 +18,22 @@
     padding-top: 58px;
     padding-bottom: 95px;
   }
+
+  .main-wrapper--form {
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-bottom: 58px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-  .main-wrapper--form {
-    padding-left: 110px;
-    padding-right: 110px;
-  }
 
   .main-wrapper {
     padding-top: 70px;
+  }
+
+  .main-wrapper--form {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }

@@ -15,7 +15,8 @@
         <picture>
           <source media="(min-width: 1440px)" width="202" height="59" srcset="img/logo/logo-desktop.svg">
           <source media="(min-width: 768px)" width="174" height="50" srcset="img/logo/logo-tablet.svg">
-          <img class="logo__image" src="img/logo/logo-mobile.svg" width="33" height="38" alt="Логотип интернет-магазина." />
+          <img class="logo__image" src="img/logo/logo-mobile.svg" width="33" height="38"
+            alt="Логотип интернет-магазина." />
         </picture>
         <img class="logo__text logo__text--header" src="img/logo/logo-text.svg" width="101" height="18"
           alt="Название компании." />
@@ -95,10 +96,17 @@
                 <label class="form__label form__label--text form__label--contact" for="email">E-mail:*</label>
                 <input class="form__control" type="email" id="email" name="email" placeholder="kuklachev@gmail.com"
                   required>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000000">
+                  <use href="img/social/sprite.svg#email"></use>
+                </svg>
+
               </div>
               <div class="form__field form__field--contact">
                 <label class="form__label form__label--text" for="tel">Телефон:*</label>
-                <input class="form__control" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required >
+                <input class="form__control" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" stroke="#000000">
+                  <use href="img/social/sprite.svg#phone"></use>
+                </svg>
               </div>
             </div>
           </fieldset>
@@ -114,22 +122,22 @@
           <fieldset class="container form__item form__item-desktop form__item--extra">
             <legend class="form__legend form__legend--extra"><span>Дополнительно</span></legend>
             <div class="form__wrapper-checkbox">
-              <div class="form__field form__field--chechbox">
+              <div class="form__field form__field--checkbox">
                 <input class="form__checkbox visually-hidden" id="sweetener" type="checkbox" name="extra-products"
                   value="sweetener" checked>
                 <label class="form__label form__label--checkbox" for="sweetener">сахарозаменитель</label>
               </div>
-              <div class="form__field form__field--chechbox">
+              <div class="form__field form__field--checkbox">
                 <input class="form__checkbox visually-hidden" id="water" type="checkbox" name="extra-products"
                   value="water">
                 <label class="form__label form__label--checkbox" for="water">питьевая вода</label>
               </div>
-              <div class="form__field form__field--chechbox">
+              <div class="form__field form__field--checkbox">
                 <input class="form__checkbox visually-hidden" id="milk" type="checkbox" name="extra-products"
                   value="milk">
                 <label class="form__label form__label--checkbox" for="milk">молоко</label>
               </div>
-              <div class="form__field form__field--chechbox">
+              <div class="form__field form__field--checkbox">
                 <input class="form__checkbox visually-hidden" id="vitamins" type="checkbox" name="extra-products"
                   value="vitamins">
                 <label class="form__label form__label--checkbox" for="vitamins">витамины</label>
