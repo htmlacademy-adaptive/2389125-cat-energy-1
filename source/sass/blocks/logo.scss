@@ -2,6 +2,10 @@
   text-decoration: none;
 }
 
+.logo__text--header {
+  margin-left: -4px;
+}
+
 .logo__image {
   margin-right: 56px;
 }
@@ -13,5 +17,6 @@
 
   .logo__text--header {
     display: none;
+    margin-left: 15px;
   }
 }

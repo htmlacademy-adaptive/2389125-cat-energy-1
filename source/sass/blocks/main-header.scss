@@ -1,5 +1,6 @@
 .main-header {
   min-height: 65px;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .main-header__container {
@@ -8,7 +9,7 @@
 }
 
 .main-header__logo {
-  height: 62px;
+  height: 65px;
   margin-left: 20px;
   width: 200px;
 
@@ -36,12 +37,15 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 65px;
-    padding-top: 25px;
+    padding-top: 16px;
   }
 
   .main-header__logo {
     margin: 0;
+  }
+
+  .main-header {
+    border: none;
   }
 }
 
@@ -66,6 +70,7 @@
       background-position: right;
       background-repeat: no-repeat;
 
+
       @media (min-resolution: 2dppx) {
         background-image: linear-gradient(
             rgba(104, 183, 56, 0.85),
@@ -73,13 +78,12 @@
           ),
           url("../img/background/promo-desktop-bg@2x.jpg"),
           linear-gradient(#4e4d52, #4e4d52);
-        background-size: 720px auto;
+        background-size: auto, 720px auto;
       }
     }
   }
 
   .main-header__container {
-    margin-bottom: 110px;
-    padding-top: 55px;
+    padding-top: 53px;
   }
 }

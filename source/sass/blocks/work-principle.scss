@@ -1,5 +1,5 @@
 .work-principle {
-  padding-bottom: 23px;
+  padding-bottom: 29px;
 }
 
 .work-principle__title {
@@ -9,6 +9,7 @@
   line-height: 40px;
   margin: 0;
   margin-bottom: 40px;
+  padding-left: 1px;
 }
 
 .work-principle__list {
@@ -61,14 +62,16 @@
   line-height: 18px;
   color: #444444;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
+  width: 200px;
+  padding-top: 2px;
 }
 
 @media (min-width: $tablet-width) {
   .work-principle__list {
     display: grid;
     grid-template-columns: repeat(2, 250px);
-    gap: 37px 135px;
+    gap: 11px 135px;
     counter-reset: myCounter;
   }
 
@@ -78,10 +81,15 @@
     margin-bottom: 32px;
   }
 
+  .work-principle {
+    padding-top: 16px;
+    padding-bottom: 20px;
+  }
+
   .work-principle__item {
     padding-top: 151px;
     padding-left: 0;
-    padding-right: 20px;
+    padding-right: 0;
     padding-bottom: 57px;
 
     &::after {
@@ -110,6 +118,7 @@
     z-index: 2;
     font-size: 16px;
     line-height: 24px;
+    width: auto;
   }
 }
 
@@ -117,6 +126,10 @@
   .work-principle__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 37px 55px;
+    gap: 37px 80px;
+  }
+
+  .work-principle {
+    padding-bottom: 43px;
   }
 }

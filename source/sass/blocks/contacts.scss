@@ -1,5 +1,5 @@
 .contacts {
-  background-color: f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .contacts__wrapper {
@@ -38,6 +38,11 @@
   text-align: center;
   background-image: url("../img/map/mobile-map.jpg");
   background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map/mobile-map@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .contacts__map iframe {
@@ -57,6 +62,11 @@
   .contacts__map {
     height: 400px;
     background-image: url("../img/map/tablet-map.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map/tablet-map@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   .contacts__map iframe {
@@ -85,6 +95,7 @@
 @media (min-width: $desktop-width) {
   .contacts__container {
     position: relative;
+    z-index: 1;
   }
 
   .contacts__wrapper {
@@ -96,8 +107,21 @@
     width: 565px;
   }
 
+  .contacts__description {
+    text-align: left;
+
+    span {
+      margin-top: 20px;
+    }
+  }
+
   .contacts__map {
     background-image: url("../img/map/desktop-map.jpg");
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map/desktop-map@2x.jpg");
+      background-size: 1440px auto;
+    }
   }
 }

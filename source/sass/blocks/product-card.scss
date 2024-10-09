@@ -2,14 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
   border-bottom: 1px solid #ebebeb;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .product-card__wrapper {
-  margin-bottom: 17px;
+  margin-bottom: 8px;
   flex-grow: 1;
 }
 
@@ -25,7 +25,7 @@
   color: #222222;
   text-transform: uppercase;
   max-width: 76px;
-margin-top: 0;
+  margin-top: 0;
 }
 
 .product-card__parameters {
@@ -93,8 +93,8 @@ margin-top: 0;
     background-image: linear-gradient(
       to bottom,
       transparent 0%,
-      transparent 82px,
-      #f2f2f2 82px,
+      transparent 71px,
+      #f2f2f2 71px,
       #f2f2f2 100%
     );
   }
@@ -118,13 +118,15 @@ margin-top: 0;
     background-color: #ffffff;
     background-image: none;
     border: 2px solid #f2f2f2;
-    margin-top: 82px;
-    padding-top: 155px;
+    margin-top: 74px;
+    padding-top: 157px;
+    padding-bottom: 37px;
 
     &::before {
       width: 60px;
       height: 60px;
       background-image: url("../img/svg/plus-tablet.svg");
+      top: 48px;
     }
 
     .product-card__title {
@@ -132,7 +134,7 @@ margin-top: 0;
       line-height: 24px;
       margin-right: auto;
       margin-left: auto;
-      margin-bottom: 23px;
+      margin-bottom: 16px;
     }
   }
 
@@ -147,9 +149,8 @@ margin-top: 0;
   .product-card__title {
     font-size: 20px;
     line-height: 24px;
-    margin: 0;
     width: 135px;
-    margin-top: 22px;
+    margin-top: 19px;
     margin-bottom: 21px;
     margin-right: auto;
     margin-left: auto;
@@ -165,8 +166,8 @@ margin-top: 0;
 
   .product-card__parameters-row {
     border-bottom: 1px solid #cdcdcd;
-    padding-bottom: 5px;
-    margin-bottom: 12px;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
   }
 
   .product-card__parameters-row:last-child {
@@ -178,5 +179,44 @@ margin-top: 0;
   .product-card__image {
     width: 169px;
     height: 210px;
+  }
+
+  .product-card {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .product-card__title {
+    margin-top: 8px;
+    margin-bottom: 25px;
+  }
+
+  .product-card--more {
+    margin-top: 70px;
+    padding-top: 150px;
+  }
+
+  .product-card__description {
+    margin-bottom: 90px;
+  }
+
+  .product-card__wrapper {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .product-card__parameters-row {
+    padding-bottom: 5px;
+    margin-bottom: 6px;
+  }
+
+  .product-card__parameters-row:last-child {
+    margin-bottom: 35px;
+  }
+
+  .product-card__button {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: auto;
   }
 }
