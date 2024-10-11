@@ -59,10 +59,10 @@ export const createWebp = () => {
 //Sprite
 
 export const sprite = () => {
-  return gulp.src('source/img/social/*.svg')
+  return gulp.src('source/img/sprite/*.svg')
   .pipe(stacksvg())
   .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('build/img/social'))
+  .pipe(gulp.dest('build/img/sprite'))
 }
 
 //Copy
