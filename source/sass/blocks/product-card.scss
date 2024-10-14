@@ -11,6 +11,10 @@
 .product-card__wrapper {
   margin-bottom: 8px;
   flex-grow: 1;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .product-card__link {
