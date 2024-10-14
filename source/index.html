@@ -8,6 +8,9 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
@@ -149,9 +152,8 @@
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/slider/cat-tablet-fat.webp 1x, img/slider/cat-tablet-fat@2x.webp 2x" width="560"
                 height="512">
-              <source type="image/webp"
-                srcset="img/slider/cat-mobile-fat.webp 1x, img/slider/cat-mobile-fat@2x.webp 2x" width="280"
-                height="256">
+              <source type="image/webp" srcset="img/slider/cat-mobile-fat.webp 1x, img/slider/cat-mobile-fat@2x.webp 2x"
+                width="280" height="256">
 
               <source media="(min-width: 1440px)"
                 srcset="img/slider/cat-tablet-fat.png 1x, img/slider/cat-tablet-fat@2x.png 2x" width="560" height="512">
@@ -184,7 +186,10 @@
                 alt="После-программы похудения.">
             </picture>
           </div>
-          <button class="program-example__slider" type="button"></button>
+          <button class="program-example__slider" type="button">
+            <span class="visually-hidden">До программы похудения и после программы похудения</span>
+          </button>
+
         </div>
       </div>
     </section>

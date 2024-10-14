@@ -21,7 +21,7 @@
         transparent 302px
       ),
       url("../img/background/promo-mobile-bg@2x.jpg");
-    background-size: 320px auto;
+    background-size: auto, 320px;
   }
 }
 
@@ -46,14 +46,18 @@
   margin-left: -2px;
 }
 
+.promo__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .promo__link {
   display: inline-block;
   text-decoration: none;
   padding: 10px 44px;
-  margin-top: 3px;
   width: 100%;
   text-align: center;
-  margin-top: 0;
 }
 
 @media (min-width: $tablet-width) {
