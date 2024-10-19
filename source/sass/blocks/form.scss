@@ -127,8 +127,16 @@
   display: block;
 }
 
+.form__radio:checked:focus + .form__label--radio::before {
+  outline: 1px solid #444444;
+}
+
 .form__checkbox:checked + .form__label--checkbox::after {
   display: block;
+}
+
+.form__checkbox:checked:focus + .form__label--checkbox::before {
+  outline: 1px solid #444444;
 }
 
 .form__label--radio:hover::before {
